@@ -11,9 +11,9 @@
 ### 命令说明
 | 命令 | 描述 |
 |------|------|
-| `client` | 客户端 |
-| `generate_readme` | 自动生成 CLI 项目的 README 文档（中英文） |
-| `server` | 服务端 |
+| `client` | 客户端命令行 |
+| `serve` | 服务端命令行 |
+| `generatereadme` | 生成CLI项目的README文档 |
 
 ## English Version
 ### Overview
@@ -27,6 +27,6 @@
 ### Command Reference
 | Command | Description |
 |---------|------------|
-| `client` | 客户端 |
-| `generate_readme` | 自动生成 CLI 项目的 README 文档（中英文） |
-| `server` | 服务端 |
+| `client` | 客户端命令行 |
+| `serve` | 服务端命令行 |
+| `generatereadme` | 生成CLI项目的README文档 |
