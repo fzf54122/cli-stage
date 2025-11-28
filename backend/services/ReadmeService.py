@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2025/11/24 下午3:54
 # @Author  : fzf
-# @FileName: GenerateReadmeService.py
+# @FileName: ReadmeService.py
 # @Software: PyCharm
 from backend.base import BaseService
 from backend.base.cli_group import view_set
@@ -10,7 +10,7 @@ from backend.utils.log import get_logger
 logger = get_logger(__name__)
 
 
-class GenerateReadmeService(BaseService):
+class ReadmeService(BaseService):
     """自动生成 CLI 项目的 README 文档（中英文）"""
     def handler(self, *args, **kwargs):
         file_path = "README.md"

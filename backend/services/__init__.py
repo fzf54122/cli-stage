@@ -4,13 +4,13 @@
 # @FileName: service.py
 # @Software: PyCharm
 __all__ = ['ClientService',
-           'GenerateReadmeService',
+           'ReadmeService',
            'ServerService',
            'use_service', ]
 
 from .ClientService import ClientService
-from .GenerateReadmeService import GenerateReadmeService
 from .ServerService import ServeService
+from .ReadmeService import ReadmeService
 
 
 class ServiceFactory:
@@ -18,7 +18,7 @@ class ServiceFactory:
     service_mapping = {
         "client": ClientService,
         "serve": ServeService,
-        "readme": GenerateReadmeService,
+        "readme": ReadmeService,
     }
 
     @classmethod
