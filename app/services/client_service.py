@@ -13,7 +13,7 @@ logger = get_logger(__name__)
 class ClientService:
 
     async def async_main(*args, **kwargs):
-        client = WebSocketClient("ws://127.0.0.1:8000/ws/test/")
+        client = WebSocketClient("ws://127.0.0.1:8000/ws/cli-stage/")
         await client.connect()
 
     def run(self, *args, **kwargs):

@@ -8,6 +8,7 @@ from typing import Dict, List
 from fastapi import WebSocket, WebSocketDisconnect
 
 from app.utils.log import get_logger
+from app.config import config
 
 logger = get_logger(__name__)
 
@@ -44,12 +45,11 @@ class WebSocketManager:
         redis = await aioredis.from_url("redis://localhost", db=10)
         pubsub = redis.pubsub()
 
-        groups = ["test", "vip"]
-        for g in groups:
+        for g in config.WS_GROUPS:
             await pubsub.subscribe(f"group:{g}")
-
         # logger.info("Redis 监听启动...")
         async for message in pubsub.listen():
+
             if message["type"] == "message":
                 data = message["data"]
                 channel = message["channel"]

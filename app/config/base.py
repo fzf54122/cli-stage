@@ -10,6 +10,7 @@ class BaseConfig:
     """基础配置类"""
     DEBUG = False
     CLI_COMMANDS = {}
+    WS_GROUPS = ['cli-stage']
 
     @classmethod
     def register_command(cls, name, command_class):
