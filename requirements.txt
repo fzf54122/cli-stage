@@ -1,0 +1,6 @@
+click~=8.1.7
+rich~=14.2.0
+fastapi~=0.122.0
+uvicorn~=0.33.0
+websockets~=13.1
+aioredis~=2.0.1
